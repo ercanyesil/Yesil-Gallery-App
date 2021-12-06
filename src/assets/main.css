@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+:root{
+    --primary: #e77f67;
+    --secondary: #619221;
+    --succes: #1d0329;
+    --error: #ea2027;
+}
+
+body{
+    font-family: 'Bangers', cursive;
+    background: var(--succes);
+    margin: 10px;
+}
+.App{
+    max-width: 1080px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
