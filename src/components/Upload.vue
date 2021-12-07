@@ -7,13 +7,16 @@
         <div class="output">
             <div v-if="dosyaHatasi" class="error">{{dosyaHatasi}}</div>
             <div v-if="dosya">{{dosya.name}}</div>
+            <progress-bar v-if="dosya" :file="dosya" />
         </div>
     </form>
 </template>
-
+   
 <script>
 import {ref} from 'vue'
+import ProgressBar from './ProgressBar.vue'
     export default {
+        components:{ProgressBar},
         setup(){
 
             const dosya=ref('');

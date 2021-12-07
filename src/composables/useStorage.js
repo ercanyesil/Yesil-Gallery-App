@@ -9,7 +9,7 @@ const useStorage=(dosya)=>{
 
         const storageRef=depo.ref('resimler/'+dosya.name);
 
-        storageRef.put(dosya).on('state_changed',(snap)=>){
+        storageRef.put(dosya).on('state_changed',(snap)=>{
             console.log(snap);
         },(err)=>{
             error.value=err
